@@ -1,0 +1,123 @@
+@import 'variables';
+
+.main-container {
+    width: 100%;      
+    height: 100vh;    
+    display: flex;    
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    background-color: #1a1a1a; 
+}
+
+.image-container {
+    position: relative;
+    width: auto; 
+    max-width: 100%; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba($azul_claro, 0.9);
+    border-radius: 10px; 
+    overflow: hidden; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 40px rgba($azul_claro, 0.9);
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    animation: fadeIn 1.5s ease; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 3;
+        transform: translateY(0);
+    }
+}
+
+.welcome-container {
+    padding: 20px; 
+    margin: 0 auto; 
+    max-width:0 auto; 
+    background-color: $azul_oscuro;
+
+
+    h1 {
+      text-align: center;
+      color:$dorado;
+      font-family: 'Cormorant Garamond', serif;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px $azul_claro, 0 0 15px $azul_claro;
+    }
+     
+     
+  
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: $color_blanco;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    
+    em {
+      color: $dorado; 
+      font-style: italic;  
+    }
+  
+    strong {
+      color: $dorado;  
+      font-weight: bold;  
+ 
+    }
+}
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 50px; 
+    padding: 20px; 
+  }
+  
+  .imagenes img {
+    max-width: 100%; 
+    height: 600px; 
+    max-width: 500px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease; 
+    filter: brightness(0.8) saturate(1.2); 
+  }
+  
+  .imagenes img:hover {
+    transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 10px 25px #d4af37, 0 0 20px #d4af37; 
+    filter: brightness(1) saturate(1.5); 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .imagenes img {
+      max-width: 100%; 
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .imagenes {
+      gap: 10px; 
+      padding: 10px; 
+    }
+  }
+  

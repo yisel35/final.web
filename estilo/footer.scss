@@ -1,0 +1,42 @@
+@import 'variables';
+
+
+footer {
+    background-color: #121212; 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer-image {
+    max-width: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px rgba(0, 136, 255, 0.8));
+    transition: transform 0.3s ease, filter 0.3s ease;
+    animation: color-shift 5s infinite; 
+  }
+  
+  @keyframes color-shift {
+    0% {
+      filter: drop-shadow(0 0 10px $color_blanco); 
+    }
+    33% {
+      filter: drop-shadow(0 0 10px $azul_claro);
+    }
+    66% {
+      filter: drop-shadow(0 0 10px $azul_oscuro); 
+    }
+    100% {
+      filter: drop-shadow(0 0 10px $color_blanco); 
+    }
+  }
+
+  .footer-text {
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: $dorado; 
+  }

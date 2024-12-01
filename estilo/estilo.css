@@ -1,3 +1,221 @@
+.image-container {
+  margin-top: 40px;
+}
 
+.navbar {
+  background-image: url("../imagenes/index.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #00050a;
+  box-shadow: 0 4px 6px rgb(252, 239, 239);
+  font-family: "Cinzel", serif;
+}
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FFD700;
+  text-shadow: 0 0 8px #72c7f1, 0 0 15px #72c7f1;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .navbar-brand:hover {
+  color: #ffe766;
+  text-shadow: 0 0 15px #72c7f1, 0 0 25px #72c7f1;
+}
+.navbar .nav-link {
+  color: #FFD700;
+  margin-right: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #FFD700;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+.navbar .navbar-toggler {
+  border: none;
+  background: transparent;
+}
+.navbar .navbar-toggler:focus, .navbar .navbar-toggler:hover {
+  outline: none;
+  box-shadow: none;
+}
+.navbar .offcanvas {
+  background: rgba(0, 5, 10, 0.9);
+  color: #FFD700;
+}
+.navbar .offcanvas .offcanvas-title {
+  font-size: 1.5rem;
+  color: #FFD700;
+  text-shadow: 0 0 10px #72c7f1, 0 0 20px #72c7f1;
+}
+.navbar .offcanvas .nav-link {
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+.navbar .offcanvas .nav-link:hover {
+  color: #ffe766;
+}
+
+.nav-link.active {
+  color: #FFD700 !important;
+  text-shadow: 0 0 8px #72c7f1, 0 0 15px #72c7f1;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #1a1a1a;
+}
+
+.image-container {
+  position: relative;
+  width: auto;
+  max-width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(114, 199, 241, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 40px rgba(114, 199, 241, 0.9);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 3;
+    transform: translateY(0);
+  }
+}
+.welcome-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 0 auto;
+  background-color: #00050a;
+}
+.welcome-container h1 {
+  text-align: center;
+  color: #FFD700;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #72c7f1, 0 0 15px #72c7f1;
+}
+.welcome-container p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgb(255, 254, 254);
+  text-align: center;
+  margin-bottom: 15px;
+}
+.welcome-container em {
+  color: #FFD700;
+  font-style: italic;
+}
+.welcome-container strong {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+}
+
+.imagenes img {
+  max-width: 100%;
+  height: 600px;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+  filter: brightness(0.8) saturate(1.2);
+}
+
+.imagenes img:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 25px #d4af37, 0 0 20px #d4af37;
+  filter: brightness(1) saturate(1.5);
+}
+
+@media (max-width: 768px) {
+  .imagenes img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .imagenes {
+    gap: 10px;
+    padding: 10px;
+  }
+}
+footer {
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-image {
+  max-width: 150px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px rgba(0, 136, 255, 0.8));
+  transition: transform 0.3s ease, filter 0.3s ease;
+  animation: color-shift 5s infinite;
+}
+
+@keyframes color-shift {
+  0% {
+    filter: drop-shadow(0 0 10px rgb(255, 254, 254));
+  }
+  33% {
+    filter: drop-shadow(0 0 10px #72c7f1);
+  }
+  66% {
+    filter: drop-shadow(0 0 10px #00050a);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px rgb(255, 254, 254));
+  }
+}
+.footer-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #FFD700;
+}
 
 /*# sourceMappingURL=estilo.css.map */

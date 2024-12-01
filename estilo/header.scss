@@ -1,0 +1,88 @@
+@import 'variables';
+.image-container {
+    margin-top: 40px; 
+}
+
+
+.navbar {
+  background-image: url('../imagenes/index.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-color: $azul_oscuro; 
+  box-shadow: 0 4px 6px rgb(252, 239, 239);
+  font-family: 'Cinzel', serif;
+
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:$dorado; 
+    text-shadow: 0 0 8px $azul_claro, 0 0 15px $azul_claro;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: lighten($dorado, 20%); 
+      text-shadow: 0 0 15px $azul_claro, 0 0 25px $azul_claro; 
+    }
+  }
+
+  .nav-link {
+    color: $dorado; 
+    margin-right: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: $dorado; 
+      transition: width 0.3s ease-in-out;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .offcanvas {
+    background: rgba($azul_oscuro, 0.9); 
+    color: $dorado; 
+
+    .offcanvas-title {
+      font-size: 1.5rem;
+      color: $dorado; 
+      text-shadow: 0 0 10px $azul_claro, 0 0 20px $azul_claro; 
+    }
+
+    .nav-link {
+      color: $dorado; 
+      margin-bottom: 0.5rem;
+
+      &:hover {
+        color: lighten($dorado, 20%); 
+      }
+    }
+  }
+}
+
+.nav-link.active {
+    color: $dorado !important; 
+    text-shadow: 0 0 8px $azul_claro, 0 0 15px $azul_claro;
+}

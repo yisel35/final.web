@@ -10,15 +10,68 @@
 <body>
 
 <header>
-
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ARCANE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ARCANE</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="personaje.html">Personajes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mapa.html">Ciudades</a>
+                  </li>
+                  </a>
+                </li>
+              </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
 </header>
+
 <main>
-
-
+  <div class="main-container">
+    <div class="image-container">
+    <img src="imagenes/index.2.jpg" alt="imagen principal" class="full-screen-image">
+   </div>
+ </div>
+ <div class="welcome-container">
+    <h1>Bienvenido a Piltover y Zaun, donde la historia se teje entre sombras y luces.</h1>
+    <p>
+      Aquí, en las profundidades de una ciudad dividida por la ambición y la lucha, cada rincón guarda secretos que solo los valientes se atreven a descubrir. <em>Arcane</em> no es solo una historia, es una travesía que desafía los límites del destino.
+    </p>
+    <p>
+      Embárcate en un viaje donde las fronteras entre el bien y el mal se difuminan, y donde el poder de la magia y la ciencia chocan con la determinación de personajes inolvidables. ¿Estás listo para explorar los secretos de <em>Arcane</em> y descubrir qué hay más allá de lo que los ojos pueden ver?
+    </p>
+    <p>
+      <strong>Explora, aprende, y vive la historia como nunca antes.</strong>
+    </p>
+    <div class="imagenes">
+     <img src="imagenes/index3.jpg" alt="muestra">
+     <img src="imagenes/index4.jpg" alt="muestra">
+     <img src="imagenes/index5.jpg" alt="muestra">
+    </div>
+  </div>
 </main>
+
 <footer>
-
-
+    <div class="footer-content">
+      <img src="imagenes/foother.jpg" alt="Logo de Arcane" class="footer-image">
+      <p class="footer-text">Explora el mundo de Arcane</p>
+    </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
