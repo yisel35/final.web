@@ -1,7 +1,4 @@
 @import 'variables';
-.image-container {
-    margin-top: 40px; 
-}
 
 
 .navbar {
@@ -11,8 +8,10 @@
   background-color: $azul_oscuro; 
   box-shadow: 0 4px 6px rgb(252, 239, 239);
   font-family: 'Cinzel', serif;
+ 
 
-  .navbar-brand {
+
+.navbar-brand {
     font-size: 1.8rem;
     font-weight: bold;
     color:$dorado; 
@@ -25,7 +24,7 @@
     }
   }
 
-  .nav-link {
+.nav-link {
     color: $dorado; 
     margin-right: 1.5rem;
     position: relative;
@@ -50,9 +49,8 @@
     }
   }
 
-  .navbar-toggler {
+.navbar-toggler {
     border: none;
-    background: transparent;
 
     &:focus,
     &:hover {
