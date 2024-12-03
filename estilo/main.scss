@@ -29,6 +29,7 @@
     height: 500px ;
     display: block;
     animation: fadeIn 1.5s ease; 
+    
    
     
 }
@@ -57,6 +58,7 @@
       font-family: 'Cormorant Garamond', serif;
       margin-bottom: 20px;
       text-shadow: 0 0 8px $azul_claro, 0 0 15px $azul_claro;
+      
     }
      
      
@@ -89,7 +91,7 @@
     align-items: center;
     flex-wrap: wrap; 
     gap: 50px; 
-    padding: 20px; 
+    padding: 100px; 
   }
   
   .imagenes img {
@@ -158,7 +160,7 @@
 .heroes-container {
   flex-wrap: wrap; 
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 60px;
   
 }
 
@@ -193,7 +195,8 @@
   font-size: 1.1rem; 
   color: $color_blanco; 
   text-align: center;  
-  text-shadow: none
+  text-shadow: none;
+ 
 
 }
 

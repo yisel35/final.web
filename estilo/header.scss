@@ -4,12 +4,14 @@
 .navbar {
   background-image: url('../imagenes/index.png'); 
   background-size: cover; 
-  background-position: center; 
-  background-color: $azul_oscuro; 
+  background-position: center;  
   box-shadow: 0 4px 6px rgb(252, 239, 239);
   font-family: 'Cinzel', serif;
  
-
+  .navbar-toggler-icon {
+    background-color: $color_blanco; 
+    border-radius: 5px;
+  }
 
 .navbar-brand {
     font-size: 1.8rem;
@@ -45,6 +47,7 @@
     &:hover {
       &::after {
         width: 100%;
+        
       }
     }
   }
