@@ -237,6 +237,8 @@
   color: rgb(255, 254, 254);
   text-align: center;
   text-shadow: none;
+  max-width: 100%;
+  margin: 10px;
 }
 
 .heroes-texto .imagenes img {
@@ -277,6 +279,102 @@ h3 {
 .arma-container:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.mapa-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.imagen-mapa img {
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgb(255, 254, 254);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagen-mapa img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgb(255, 254, 254);
+}
+
+@media (max-width: 768px) {
+  .titulo-seccion {
+    font-size: 2rem;
+  }
+  .descripcion {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .imagen-mapa img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+}
+.mapa-container h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  font-family: "Cormorant Garamond", serif;
+  text-shadow: 0 0 8px #72c7f1, 0 0 15px #72c7f1;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 50px 0;
+}
+
+.logo-container img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-container img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.mapa-texto {
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+.mapa-texto h2 {
+  color: #FFD700;
+  font-family: "Cormorant Garamond", serif;
+  text-shadow: 0 0 10px #72c7f1;
+  margin-bottom: 15px;
+}
+.mapa-texto .imagenes {
+  justify-content: center;
+  gap: 50px;
+}
+.mapa-texto .imagenes img {
+  width: auto;
+  height: 600px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mapa-texto .imagenes img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgb(255, 254, 254);
+}
+.mapa-texto p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  color: rgb(255, 254, 254);
+  line-height: 1.6;
+  margin: 0;
 }
 
 footer {
