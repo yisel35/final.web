@@ -2,14 +2,12 @@
 
 
 footer {
-    background-color: #121212; 
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    overflow: hidden;
-  }
-  
+  background-color: $azul_oscuro;
+  color: $color_blanco;
+  text-align: center;
+  padding: 20px;
+  margin: auto; 
+}
   .footer-image {
     max-width: 150px;
     margin-bottom: 10px;
